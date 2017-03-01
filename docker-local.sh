@@ -1,1 +1,0 @@
-docker run -it --volume=$(pwd):/repo --workdir="/repo" --memory=4g --memory-swap=4g --entrypoint=/bin/bash node:6.9.2
