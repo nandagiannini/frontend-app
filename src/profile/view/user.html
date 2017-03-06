@@ -1,0 +1,33 @@
+<div class="container">
+  <div class="row">
+    <aside class="col-md-3">
+      <figure class="avatar avatar-circle">
+        <img data-ng-src="{{ctrl.profile.avatar.medium}}" class="img-circle" alt="">
+      </figure>
+      <div class="text-center">
+        <h4 data-ng-bind="ctrl.profile.name"></h4>
+<!--
+        <form name="avatar">
+                <i class="glyphicon glyphicon-camera"></i> edite sua foto
+            <file model="ctrl.profile.avatar">
+              <i class="glyphicon glyphicon-camera"></i> edite sua foto
+            </file>
+        </form>-->
+        <ul class="list-group">
+          <li class="list-group-item">
+            <a ui-sref="profile.user.events" ui-sref-active="active">Campanhas ativas</a>
+          </li>
+          <li class="list-group-item">
+            <a ui-sref="profile.user.impacts" ui-sref-active="active">Meu impacto</a>
+          </li>
+          <li class="list-group-item">
+            <a ui-sref="profile.user.configurations" ui-sref-active="active">Configurações</a>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <div class="col-md-9">
+      <ui-view></ui-view>
+    </div>
+  </div>
+</div>
